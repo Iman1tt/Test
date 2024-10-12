@@ -1,0 +1,15 @@
+stages:
+  - _st1
+  - _st2
+
+job1:
+  stage: _st1
+  script:
+    - echo "hey you"
+    - sleep 10
+
+job2:
+  stage: _st2
+  script:
+    - echo "hey you²"
+    - sleep 5
